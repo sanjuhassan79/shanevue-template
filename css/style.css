@@ -1,0 +1,346 @@
+    /*=============== GOOGLE FONTS ===============*/
+    
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,200&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;1,100&display=swap');
+    /*=============== BASE ===============*/
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-size: 1rem;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    h3 {
+        font-size: 1.875rem;
+        font-weight: 700;
+        margin: 20px 0;
+        line-height: 2.625rem;
+        color: rgb(0, 0, 0);
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 4.5rem;
+        font-weight: 900;
+        line-height: 5.85rem;
+        color: transparent;
+        -webkit-text-stroke: 1px #000;
+    }
+    
+    h2 {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 2rem;
+        color: rgb(255, 255, 255);
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    h5 {
+        font-size: 2.1rem;
+        font-weight: 700;
+        line-height: 2rem;
+        color: rgb(255, 255, 255);
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 56px;
+        margin-top: 34px;
+    }
+    
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 2rem;
+        color: rgb(118, 118, 118)
+    }
+    
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    /*=============== HEADER ===============*/
+    
+    header#header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 1.4rem 0;
+    }
+    
+    nav.menu a {
+        margin: 0 1rem;
+        color: white;
+        font-weight: 500;
+    }
+    
+    button.munebtn {
+        font-size: 1rem;
+        padding: 10px 28px;
+        border: 1px solid white;
+        background-color: #ff000000;
+        color: white;
+        font-weight: 500;
+        border-radius: 5px;
+        text-transform: capitalize;
+    }
+    /*=============== HOME ===============*/
+    
+    #home {
+        background-image: url(../assets/asset\ 23.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .home-contact {
+        margin-left: -60rem;
+    }
+    
+    .home-contact h2 {
+        margin: 23px 0;
+    }
+    
+    section#about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 140px 0;
+    }
+    
+    .about-text {
+        width: 50%;
+        padding: 0 134px;
+    }
+    
+    p.about-title {
+        background: #d2c8c8;
+        width: 127px;
+        padding: 6px 24px;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 600;
+    }
+    
+    button.about-btn {
+        background: black;
+        color: white;
+        padding: 11px 27px;
+        margin-top: 25px;
+        font-size: 24px;
+    }
+    /*=============== HOME ===============*/
+    
+    section#Portfolio {
+        background-color: #f9f9f9;
+        padding: 42px 0;
+    }
+    
+    .img-text {
+        width: 469px;
+        height: 394px;
+        position: relative;
+        overflow: hidden;
+        margin: 39px 26px;
+        border-radius: 8px;
+    }
+    
+    .text-img-item {
+        position: absolute;
+        bottom: -51px;
+        background: rgba(243, 241, 241, 0.788);
+        width: 100%;
+        height: 50px;
+        visibility: hidden;
+        opacity: 2;
+        transition: visibility .3s, bottom 2s, opacity .3s ease-in-out;
+    }
+    
+    .img-text:hover .text-img-item {
+        visibility: visible;
+        opacity: 1;
+        bottom: 0px;
+    }
+    
+    .img-text:hover .photo {
+        transform: scale(1.1);
+        transition: transform 2s linear;
+    }
+    
+    .photo {
+        transition: transform 2s linear;
+    }
+    
+    .Portfolio-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .text-img-item h6 {
+        font-size: 20px;
+        font-weight: 400;
+        padding: 10px 20px;
+    }
+    
+    .Portfolio-text {
+        margin-left: 12rem;
+    }
+    /*=============== SKILLS ===============*/
+    
+    section#skills {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 8rem 0;
+    }
+    
+    .skills_progress {
+        width: 36%;
+    }
+    
+    .skills_progress li {
+        list-style: none;
+        margin: 50px 0;
+        font-weight: bolder;
+        text-transform: uppercase;
+        position: relative;
+    }
+    
+    .skills_progress li::before {
+        content: '';
+        position: absolute;
+        top: 34px;
+        left: 0;
+        background-color: rgb(170, 167, 173);
+        width: 100%;
+        height: 10px;
+        border-radius: 30px;
+    }
+    
+    .skills_progress li::after {
+        content: '';
+        position: absolute;
+        top: 34px;
+        left: 0;
+        background-color: rgb(79, 7, 151);
+        width: 0;
+        height: 10px;
+        border-radius: 30px;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-name: html;
+    }
+    
+    @keyframes html {
+        to {
+            width: 90%;
+            background-color: rgb(26, 24, 24);
+        }
+    }
+    /*=============== PRODUCT ===============*/
+    
+    #products {
+        background-image: url(../assets/asset\ 25.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .products-text {
+        padding: 150px 0;
+        text-align: center;
+    }
+    
+    .products-text i {
+        font-size: 3rem;
+        background: white;
+        border-radius: 18%;
+        padding: 2rem;
+    }
+    
+    .products-text h3 {
+        color: white;
+        margin: 3rem 0;
+    }
+    /*=============== PRODUCT ===============*/
+    
+    section#logosection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 3rem 0;
+    }
+    
+    img.logo-item-hover {
+        opacity: .5;
+        transition: all .3s ease;
+    }
+    
+    img.logo-item-hover:hover {
+        opacity: 1;
+    }
+    /*=============== TESTMONALS ===============*/
+    
+    section#testmonials {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-around;
+        align-items: center;
+        background: #f7f7f7;
+        padding: 7rem 0;
+    }
+    
+    .test-title {
+        padding: 6px 11px;
+    }
+    
+    img.founder-p {
+        width: 86px;
+        border-radius: 50%;
+    }
+    
+    .funder {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    
+    .funder-text {
+        margin-left: 2rem;
+    }
+    
+    .funder-text h6 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 18px;
+    }
+    
+    .funder-text span {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 15px;
+    }
