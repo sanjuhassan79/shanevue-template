@@ -428,3 +428,89 @@
         background: black;
         color: white;
     }
+    
+    @media (max-width: 1366px) {
+        .home-contact {
+            margin-left: -39rem;
+        }
+        .img-text {
+            width: 396px;
+        }
+        .news-item {
+            width: 397px;
+        }
+    }
+    
+    @media (max-width: 1068px) {
+        .home-contact {
+            margin-left: -29rem;
+        }
+        .about-text {
+            padding: 0px 56px;
+        }
+        .img-text {
+            width: 295px;
+            height: 302px;
+        }
+        .news-item {
+            width: 296px;
+            margin: 39px 14px;
+        }
+    }
+    
+    @media (max-width: 1024px) {
+        .about-text {
+            padding: 57px 0px;
+        }
+        .img-text {
+            width: 277px;
+            height: 287px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .home-contact {
+            margin-left: 1rem;
+        }
+        .img-text {
+            width: 195px;
+            height: 209px;
+        }
+        section#skills {
+            flex-direction: column;
+        }
+        .skills_progress {
+            width: 65%;
+        }
+        .news-item {
+            height: 335px;
+        }
+    }
+    
+    @media (max-width: 500px) {
+        nav.menu {
+            margin-top: 22px;
+        }
+        nav.menu a {
+            margin: 0 10px;
+        }
+        button.dis-none {
+            display: none;
+        }
+        .about-text {
+            width: 86%;
+        }
+        .Portfolio-text {
+            margin-left: 2rem;
+        }
+        .img-text {
+            width: 344px;
+            height: 306px;
+        }
+        .skills_progress {
+            width: 85%;
+        }
+        .news-item {
+            margin: 15px 14px;
+        }
+    }
